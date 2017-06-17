@@ -1,0 +1,7 @@
+{
+    "kind": "Network",
+    "apiVersion": "batch.heartlock.io/v1beta1",
+    "metadata": {
+        "name": "Network-test"
+    }
+}

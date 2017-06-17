@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kubernetes Resource Reference Docs</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="node_modules/highlight.js/styles/default.css" type="text/css">
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+<body>
+<div id="sidebar-wrapper" class="side-nav side-bar-nav"><ul><li class="nav-level-1 strong-nav"><a href="#-strong-definitions-strong-" class="nav-item"><strong>Definitions</strong></a></li><ul id="-strong-definitions-strong--nav" style="display: none;"><li class="nav-level-2"><a href="#status-v1-meta" class="nav-item">Status v1 meta</a></li></ul></ul><ul><li class="nav-level-1 strong-nav"><a href="#-strong-old-versions-strong-" class="nav-item"><strong>Old Versions</strong></a></li></ul><br/><div class="copyright"><a href="https://github.com/kubernetes/kubernetes">Copyright 2016 The Kubernetes Authors.</a></div></div>
+<div id="wrapper">
+<div id="code-tabs-wrapper" class="code-tabs"><ul class="code-tab-list"></ul></div>
+<div id="page-content-wrapper" class="body-content container-fluid"><h1 id="-strong-definitions-strong-"><strong>Definitions</strong></h1>
+<hr>
+<h2 id="status-v1-meta">Status v1 meta</h2>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Version</th>
+<th>Kind</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>meta</td>
+<td>v1</td>
+<td>Status</td>
+</tr>
+</tbody>
+</table>
+<p>Status is a return value for calls that don&#39;t return other objects.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>apiVersion <br /> <em>string</em></td>
+<td>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources">http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources</a></td>
+</tr>
+<tr>
+<td>code <br /> <em>integer</em></td>
+<td>Suggested HTTP return code for this status, 0 if not set.</td>
+</tr>
+<tr>
+<td>details <br /> <em><a href="#statusdetails-v1">StatusDetails</a></em></td>
+<td>Extended data associated with the reason.  Each reason may define its own extended details. This field is optional and the data returned is not guaranteed to conform to any schema except that defined by the reason type.</td>
+</tr>
+<tr>
+<td>kind <br /> <em>string</em></td>
+<td>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds">http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds</a></td>
+</tr>
+<tr>
+<td>message <br /> <em>string</em></td>
+<td>A human-readable description of the status of this operation.</td>
+</tr>
+<tr>
+<td>metadata <br /> <em><a href="#listmeta-v1">ListMeta</a></em></td>
+<td>Standard list metadata. More info: <a href="http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds">http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds</a></td>
+</tr>
+<tr>
+<td>reason <br /> <em>string</em></td>
+<td>A machine-readable description of why this operation is in the &quot;Failure&quot; status. If this value is empty there is no information available. A Reason clarifies an HTTP status code but does not override it.</td>
+</tr>
+<tr>
+<td>status <br /> <em>string</em></td>
+<td>Status of the operation. One of: &quot;Success&quot; or &quot;Failure&quot;. More info: <a href="http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#spec-and-status">http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#spec-and-status</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="-strong-old-versions-strong-"><strong>Old Versions</strong></h1>
+<hr>
+</div>
+</div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/jquery.scrollto/jquery.scrollTo.min.js"></script>
+<script src="navData.js"></script>
+<script src="scroll.js"></script>
+<!--<script src="actions.js"></script>-->
+<script src="tabvisibility.js"></script>
+</body>
+</html>
